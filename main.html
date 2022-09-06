@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMFY</title>
+    <style>
+        .header{
+            background-color: rgb(4, 22, 21);
+            height: 4em;
+            display: flex;
+            width: 100%;
+        }
+        #logo{
+            width: 50px;
+            padding: 5px;
+        }
+        .navigation{
+            display: inline-flex;
+            list-style-type: none;
+        }
+        .nav-link{
+            text-decoration: none;
+            padding: 10px;
+            color: aliceblue;
+        }
+        #main{
+            background-color: aliceblue;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-columns: repeat(2,1fr);
+        }
+        #content1{
+            background-color: aliceblue;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            text-align: center;
+            padding: 50px;
+            color: rgb(8, 66, 72);
+        }
+        #image1{
+            width:  100%;
+            grid-column-start: 2;
+            grid-column-end: 3;
+
+        }
+        #main2{
+            display: grid;
+            background-color: rgb(8, 66, 72);
+            grid-template-columns: repeat(2,1fr);
+        }
+        #main2 div{
+            color: aliceblue;
+        }
+        #image2{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            width: 90%;
+        }
+        #fimg{
+            border-radius: 200px;
+            padding: 5px;
+            width: 400PX;
+            height: 300px
+            
+            
+        }
+        #content3{
+            text-align: center;
+            color: rgb(66, 101, 132);
+        }
+        #firstline,#secondline{
+            display: inline-flex;
+            background-color: aliceblue;
+        }
+        #featured p{
+            text-align: center;
+        }
+        #featured div{
+            padding: 30px;
+        }
+        #ending{
+            float: left;
+            padding: 30px;
+            color: rgb(2, 74, 67);
+        }
+        form{
+            float: right;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: rgba(11, 87, 67, 0.571);
+        }
+        input[type=text],input[type=email],textarea{
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="header" >
+        <img id="logo" src="comfy.png" alt="">
+            <div id="navbar">
+                <ul class="navigation">
+                    <li><a href="" class="nav-link">Rora</a></li>
+                    <li><a href="" class="nav-link">Our Store</a></li>
+                    <li><a href="" class="nav-link">Work log</a></li>
+                    <li><a href="" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+    </div >
+
+    <div id="main">
+        <div id="content1">
+        <h1>COMFY</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+        <img  id="image1" src="image1.jfif" alt="">
+    </div>
+
+    <div id="main2">
+        <img  id="image2" src="img1.jfif" alt="">
+        <div>
+            <h1>OUR STORE</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi incidunt nostrum adipisci dignissimos, labore eligendi delectus quo! Quo voluptate minus perspiciatis, nihil adipisci voluptatibus accusamus nobis totam atque explicabo veniam?</p>
+        </div>
+    </div>+
+    <div id="featured">
+        <div id="content3" >
+            <h1>FEATURED</h1>
+        <p>Take a look at some of our featured picks that have made editorial debuts</p></div>
+        <div id="firstline" >
+        <div>
+        <a href="https://in.images.search.yahoo.com/search/images;_ylt=AwrPof4HCRdjVlEoT129HAx.;_ylu=c2VjA3NlYXJjaARzbGsDYnV0dG9u;_ylc=X1MDMjExNDcyMzAwNQRfcgMyBGFjdG4DY2xrBGNzcmNwdmlkA2FubUxZREV5Tnk3ZUF1NEpZVG14SFFJTE1qSXpMZ0FBQUFBOWpDZmoEZnIDbWNhZmVlBGZyMgNzYS1ncARncHJpZANXV3d1UVoxc1Q2NkdmbkJOQkJlSDdBBG5fc3VnZwMxMARvcmlnaW4DaW4uaW1hZ2VzLnNlYXJjaC55YWhvby5jb20EcG9zAzAEcHFzdHIDBHBxc3RybAMEcXN0cmwDMTMEcXVlcnkDbGl2aW5nJTIwcm9vbQR0X3N0bXADMTY2MjQ1NDAzNA--?p=living+room&fr=mcafee&fr2=sb-top-in.images.search&ei=UTF-8&x=wrt&type=E211IN714G0" target="_blank"><img id="fimg" src="th3.jfif" alt=""></a>
+        <p>Living Room</p>
+    </div>
+    <div>
+        <a href="https://in.images.search.yahoo.com/search/images;_ylt=Awr1TfKFCRdjhQ4omVu9HAx.;_ylu=c2VjA3NlYXJjaARzbGsDYnV0dG9u;_ylc=X1MDMjExNDcyMzAwNQRfcgMyBGFjdG4DY2xrBGNzcmNwdmlkA0FJcXdZakV5Tnk3ZUF1NEpZVG14SFFKWk1qSXpMZ0FBQUFCRkNvbWIEZnIDbWNhZmVlBGZyMgNzYS1ncARncHJpZANxRmhuZmM3VVJkcVE5bFJjWnIxTS5BBG5fc3VnZwMxMARvcmlnaW4DaW4uaW1hZ2VzLnNlYXJjaC55YWhvby5jb20EcG9zAzIEcHFzdHIDa2l0Y2hlbgRwcXN0cmwDNwRxc3RybAMxNgRxdWVyeQNraXRjaGVuJTIwZGVzaWduBHRfc3RtcAMxNjYyNDU0MTY2?p=kitchen+design&fr=mcafee&fr2=sa-gp-in.images.search&ei=UTF-8&x=wrt&type=E211IN714G0" target="_blank"><img id="fimg" src="th5.jfif" alt=""></a>
+        <p>Kitchen</p>
+    </div>
+    <div>
+        <a href="https://in.images.search.yahoo.com/search/images;_ylt=AwrPof4iCRdjthsnXMy9HAx.;_ylu=c2VjA3NlYXJjaARzbGsDYnV0dG9u;_ylc=X1MDMjExNDcyMzAwNQRfcgMyBGFjdG4DY2xrBGNzcmNwdmlkA3F6Qzh1REV5Tnk3ZUF1NEpZVG14SFFzdE1qSXpMZ0FBQUFBX0pudW0EZnIDbWNhZmVlBGZyMgNzYS1ncARncHJpZANxb0N3MlVOUVJIV1JSZ2daa1l3YUFBBG5fc3VnZwMxMARvcmlnaW4DaW4uaW1hZ2VzLnNlYXJjaC55YWhvby5jb20EcG9zAzAEcHFzdHIDBHBxc3RybAMEcXN0cmwDOARxdWVyeQNiYXRocm9vbQR0X3N0bXADMTY2MjQ1NDA4Mw--?p=bathroom&fr=mcafee&fr2=sb-top-in.images.search&ei=UTF-8&x=wrt&type=E211IN714G0" target="_blank"><img id="fimg" src="th10.jfif" alt=""></a>
+        <p>Bathroom</p>
+    </div>
+</div>
+    <div id="secondline" >
+    <div>
+        <a href="https://in.images.search.yahoo.com/search/images;_ylt=AwrPof5CCRdj86UmcGa9HAx.;_ylu=c2VjA3NlYXJjaARzbGsDYnV0dG9u;_ylc=X1MDMjExNDcyMzAwNQRfcgMyBGFjdG4DY2xrBGNzcmNwdmlkA05sV2pFREV5Tnk3ZUF1NEpZVG14SFE3VE1qSXpMZ0FBQUFCQkJKNVIEZnIDbWNhZmVlBGZyMgNzYS1ncARncHJpZANpU3NSZm5ZS1NSZW1fRERqbjYyOTlBBG5fc3VnZwMxBG9yaWdpbgNpbi5pbWFnZXMuc2VhcmNoLnlhaG9vLmNvbQRwb3MDMARwcXN0cgMEcHFzdHJsAwRxc3RybAMyMwRxdWVyeQN3b3JrJTIwYXJlYSUyMGF0JTIwaG9tZQR0X3N0bXADMTY2MjQ1NDExMw--?p=work+area+at+home&fr=mcafee&fr2=sb-top-in.images.search&ei=UTF-8&x=wrt&type=E211IN714G0" target="_blank"><img id="fimg" src="th11.jfif" alt=""></a>
+        <p>Work Area</p>
+    </div>
+    <div>
+        <a href="https://in.images.search.yahoo.com/search/images;_ylt=Awr1TfLmBxdjzpInic69HAx.;_ylu=c2VjA3NlYXJjaARzbGsDYnV0dG9u;_ylc=X1MDMjExNDcyMzAwNQRfcgMyBGFjdG4DY2xrBGNzcmNwdmlkA2FaVnNCakV5Tnk3ZUF1NEpZVG14SFFVaU1qSXpMZ0FBQUFBc1NGMHgEZnIDbWNhZmVlBGZyMgNzYS1ncARncHJpZANGRUg3NzVUNVJlMl9LVXYwdm9XakRBBG5fc3VnZwMxMARvcmlnaW4DaW4uaW1hZ2VzLnNlYXJjaC55YWhvby5jb20EcG9zAzEEcHFzdHIDZGluaQRwcXN0cmwDNARxc3RybAMxNARxdWVyeQNkaW5pbmclMjB0YWJsZQR0X3N0bXADMTY2MjQ1Mzg3NA--?p=dining+table&fr=mcafee&fr2=sa-gp-in.images.search&ei=UTF-8&x=wrt&type=E211IN714G0"  target="_blank"> <img id="fimg" src="th12.jfif" alt=""></a>
+        <p>Dining</p>
+    </div>
+    <div>
+        <a href="https://in.images.search.yahoo.com/search/images;_ylt=Awr1TfJxAxdjoVQmOAa9HAx.;_ylu=c2VjA3NlYXJjaARzbGsDYnV0dG9u;_ylc=X1MDMjExNDcyMzAwNQRfcgMyBGFjdG4DY2xrBGNzcmNwdmlkAzZOeGNxVEV5Tnk3ZUF1NEpZVG14SFF5YU1qSXpMZ0FBQUFEb1JFS1YEZnIDbWNhZmVlBGZyMgNzYS1ncARncHJpZANrejBxMEY0SlRmeTRpbHJqb1hTNHVBBG5fc3VnZwMxMARvcmlnaW4DaW4uaW1hZ2VzLnNlYXJjaC55YWhvby5jb20EcG9zAzIEcHFzdHIDYmVkJTIwZGVzaWducwRwcXN0cmwDMTEEcXN0cmwDMTcEcXVlcnkDYmVkcm9vbSUyMGRlc2lnbnMEdF9zdG1wAzE2NjI0NTM3MzU-?p=bedroom+designs&fr=mcafee&fr2=sa-gp-in.images.search&ei=UTF-8&x=wrt&type=E211IN714G0"  target="_blank" ><img id="fimg" src="th13.jfif" alt=""></a>
+        <p>Bedroom</p>
+    </div></div>
+    </div>
+    <div id="ending" >
+        <h1>RECEIVE OUR CATALOGUE</h1>
+        <P>We would love to hear from you!</P>
+        <p>To get out monthly catalogue subscribe by filling the form with your name and email address.</p>
+    </div>
+    <form action="" >
+        <p>Your Name: <input type="text" required placeholder="Your full name" required></p>
+        <p>Your Emai: <input type="email" required placeholder="Valid Email Address" required></p>
+        <p>Message: <textarea name="message" id="message" required placeholder="Your Message Address" cols="60" rows="5" required></textarea></p>
+        <input type="submit" value="send">
+    </form>
+</body>
+</html>
